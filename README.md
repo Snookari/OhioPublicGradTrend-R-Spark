@@ -146,7 +146,7 @@ plot1 <- ggplot(df, aes(x = School)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/1_so_luong_nhan_vien_theo_truong.png", plot1, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423563845-d1b1b5ab-7d47-45fc-88d6-734bd1e68196.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMjc0NDgsIm5iZiI6MTc0MjIyNzE0OCwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNTYzODQ1LWQxYjFiNWFiLTdkNDctNDVmYy04OGQ2LTczNGJkMWU2ODE5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxNTU5MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MjEwNDlhYzk0ZTg2MmRlOGM0OTc3YzRlNTQ0ZDZmNzRjZWQzNTE3Njc0ZjQ4MmY4NDFkNzYyZjZkOTkzNzBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wA7_k9T4YetbUmwvCowq54RrNlbXRoIhl4qU9vMWBOE)
+![1_so_luong_nhan_vien_theo_truong](https://github.com/user-attachments/assets/3bd17a1d-b144-4cf7-bad1-3a5e83aa15a0)
 
 ## 6.2. Tỷ lệ Professor và Non-Professor
 ```r
