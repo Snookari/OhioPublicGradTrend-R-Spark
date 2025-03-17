@@ -158,7 +158,7 @@ plot2 <- ggplot(condition_counts, aes(x = "", y = N, fill = Condition)) +
   theme_void()
 ggsave("plots/2_ty_le_professor_vs_nonprofessor.png", plot2, width = 6, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423454430-20f9858f-46e6-498f-ad9b-912d492c80b4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM1MTMsIm5iZiI6MTc0MjIxMzIxMywicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU0NDMwLTIwZjk4NThmLTQ2ZTYtNDk4Zi1hZDliLTkxMmQ0OTJjODBiNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA2NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03M2M1YTBlMzNhZjQ5Y2JlNGZhZDEzYmFmYWUzMzlhNWY4NzBjZmY1NDkwZWE3YjhkYmM3ZTM4OGRmMDllNTA2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TghmHuyLgwzLrNxAmzdWktad30MVEXUK5hVxARqe1B8)
+![2_ty_le_professor_vs_nonprofessor](https://github.com/user-attachments/assets/cc064dd4-e0ef-4270-af40-9bd119c8923c)
 
 ## 6.3. Earnings theo năm
 
@@ -169,7 +169,7 @@ plot3 <- ggplot(df, aes(x = Year, y = Earnings, color = Condition)) +
   theme_light()
 ggsave("plots/3_earnings_vs_year.png", plot3, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423455768-a3beae83-aad6-4158-b6e8-5d34821e8005.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM1MjcsIm5iZiI6MTc0MjIxMzIyNywicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU1NzY4LWEzYmVhZTgzLWFhZDYtNDE1OC1iNmU4LTVkMzQ4MjFlODAwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA3MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNTIyZGM0NzMzNjljMTFjZjY5NmY2OWYzNThkZjRjZjhhZmQ0Zjc4ZjA5YjE3ZGVlOGUxNDlhOWU2YzU4NDI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.3Mk0rTfJz5t4rWHvMuA_-89QRFTYwAnPw7y_VLg4sj0)
+![3_earnings_vs_year](https://github.com/user-attachments/assets/e94d2764-3b95-4f44-b80d-b9fb8f9414d9)
 
 ## 6.4. Phân cụm K-Means
 
@@ -183,7 +183,7 @@ p <- fviz_cluster(kmeans_result, data = X_scaled, geom = "point", ellipse = TRUE
                   main = "Biểu đồ phân cụm K-Means (PCA)")
 ggsave("plots/4.phan_cum_kmeans_PCA.png", p, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423455823-4aa7b46f-55be-4061-9190-22fef9621f9e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM1NDAsIm5iZiI6MTc0MjIxMzI0MCwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU1ODIzLTRhYTdiNDZmLTU1YmUtNDA2MS05MTkwLTIyZmVmOTYyMWY5ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA3MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NTg3MjQzODhjZWY0NjA1MDA5MGFiNTliZjI0NDMyOWMzMGE4MjQ2MGNjYTNmYWI3ZDVlMjgzZDk2OGE0ZGJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.qfyZJL-NgwNblXSo5Jo20G1cpj4Yq9UxRJRyIgH-7Ow)
+![4 phan_cum_kmeans_PCA](https://github.com/user-attachments/assets/cb9839c1-5984-4057-9db1-b09ded14e10c)
 
 ### 6.5. Dự đoán số nhân viên theo trường
 
@@ -201,7 +201,7 @@ plot5 <- ggplot(df_school_trend, aes(x = School, y = N)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/5_du_doan_so_luong_nhan_vien_theo_truong.png", plot5, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423455883-f27bb91b-3d33-4c6e-959d-aee3f43164fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM1MzgsIm5iZiI6MTc0MjIxMzIzOCwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU1ODgzLWYyN2JiOTFiLTNkMzMtNGM2ZS05NTlkLWFlZTNmNDMxNjRmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA3MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MWJjOWNiYWU3NWI1OTk1OGZjMmI4MTRiM2VjMzc4NzE0MjZiN2Q4NDY0MDc4YjcyMjViNzM5OWUyNmNhYTE1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TVfEwc0H20KFlzOFvuVgNk0JCWbSL6ws3eu3VC9Y9co)
+![5_du_doan_so_luong_nhan_vien_theo_truong](https://github.com/user-attachments/assets/6a6d88f6-4cb7-4017-94d3-e34c65b7945a)
 
 ## 7. Dự đoán và phân tích xu hướng
 
@@ -222,7 +222,7 @@ plot6 <- ggplot() +
   labs(title = "Dự đoán tỷ lệ nhân viên Professor", x = "Năm", y = "Tỷ lệ Professor")
 ggsave("plots/6_du_doan_ty_le_professor.png", plot6, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423455972-8ae73500-b369-45dc-809c-799b71faa566.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM1ODMsIm5iZiI6MTc0MjIxMzI4MywicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU1OTcyLThhZTczNTAwLWIzNjktNDVkYy04MDljLTc5OWI3MWZhYTU2Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA4MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMzRkODYzZWNmZjFjNjczNjM4YjU4YmU3NjQ3MmVlOTY2YTA5YTc0OWNjYjM4MTI0YWNkMWU2MzY5ODJjNDQyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SXzP7sUCqkpWUlp8dWsc4tCVWsBI6Q78qfN_yned-w4)
+![6_du_doan_ty_le_professor](https://github.com/user-attachments/assets/b87f3743-6234-42c5-9c12-cfe70a5f1024)
 
 ### 7.2. Dự đoán tổng số nhân viên theo năm
 
@@ -240,7 +240,7 @@ plot7 <- ggplot() +
   labs(title = "Dự đoán tổng số nhân viên theo năm", x = "Năm", y = "Số nhân viên")
 ggsave("plots/7_du_doan_tong_so_nhan_vien.png", plot7, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456031-11f49204-3d94-423b-9b20-4baa9af74806.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2MDEsIm5iZiI6MTc0MjIxMzMwMSwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2MDMxLTExZjQ5MjA0LTNkOTQtNDIzYi05YjIwLTRiYWE5YWY3NDgwNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA4MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NTExZmYwYzg2YTA5ZDNjODAyYjdiMzZhYzE2YzczMWNjM2VmYTg4ODI5Y2NlYjdiZjg1NTRmNTE1ODgwZTVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pm0anLY6Kq9LykhSTSLgjZPPvnSRo2690UIPe-uxCDY)
+![7_du_doan_tong_so_nhan_vien](https://github.com/user-attachments/assets/7aca1719-136a-4cc4-9cf8-697b248c07ad)
 
 ## 8. Phân tích theo phòng ban và trường
 
@@ -254,7 +254,7 @@ plot8 <- ggplot(top_departments, aes(x = reorder(Department, -N), y = N)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/8_phan_phoi_top_10_phong_ban.png", plot8, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456088-7babe4af-d5c6-49f8-b284-bc8d8a680912.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2MTUsIm5iZiI6MTc0MjIxMzMxNSwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2MDg4LTdiYWJlNGFmLWQ1YzYtNDlmOC1iMjg0LWJjOGQ4YTY4MDkxMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA4MzVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MmFjMmRhZWI2ZGIyOWJhNDBmNWE0NWQ2ODU1NjA3ZTUzOGI2ZDFmYjRmYmI3ZDg5MWQzNDEyYTRkNDlhYzUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.C16_tKI-469oUQUcridFmmGC6yceJy_fcvomyj8ga24)
+![8_phan_phoi_top_10_phong_ban](https://github.com/user-attachments/assets/57bfc9d5-7dea-4f0a-a3be-146b807ecfab)
 
 ### 9. Phân tích theo trường học
 
@@ -268,8 +268,7 @@ plot9 <- ggplot(top_schools, aes(x = reorder(School, -N), y = N)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/9_phan_phoi_so_luong_nhan_vien_13_truong.png", plot9, width = 10, height = 6)
 ```
-
-![image](https://private-user-images.githubusercontent.com/134117986/423456182-85edf9dc-ec72-4825-8762-ff3739da9ef5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2MzYsIm5iZiI6MTc0MjIxMzMzNiwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2MTgyLTg1ZWRmOWRjLWVjNzItNDgyNS04NzYyLWZmMzczOWRhOWVmNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA4NTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMjJkOTc4MDRiZTU2OTliNDYzYzlmYTAxMzMwMDljZTI1ODQ3MzkxNjJjY2I4ZTU5MWNhMjAyYjBkZWE1NDg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wGeSNzpvqo8-AwOhvkXnv2sPFFRm1pg8roRAJyS1pXU)
+![9_phan_phoi_so_luong_nhan_vien_13_truong](https://github.com/user-attachments/assets/7a541046-103f-494d-8464-ad1e82b33ae1)
 
 ### 9.2. 5 phòng ban ít người nhất
 
@@ -281,7 +280,7 @@ plot10 <- ggplot(bottom_departments, aes(x = reorder(Department, N), y = N)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/10_phan_phoi_5_phong_ban_it_nhan_vien.png", plot10, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456270-6ec776b3-e5e5-479e-a0e4-dd174d14e459.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2NTEsIm5iZiI6MTc0MjIxMzM1MSwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2MjcwLTZlYzc3NmIzLWU1ZTUtNDc5ZS1hMGU0LWRkMTc0ZDE0ZTQ1OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA5MTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjI1NzBhMTRmYjAzMWE2NDM1ZGM1MjFlZDczYzA2Mzg0MzFjNGNhYzliY2JiOGIyMmNiNjkwNWNhYjhhYzI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.JRpYgz0vvC1ZXUw_NKJoid9rbBdbvLR1EDgcPcfQ3-M)
+![10_phan_phoi_5_phong_ban_it_nhan_vien](https://github.com/user-attachments/assets/037e4287-d12a-48df-bc73-4010485b1895)
 
 ## 10. Phân tích theo từng trường cụ thể
 
@@ -296,7 +295,7 @@ plot11 <- ggplot(top_departments_ohio, aes(x = reorder(Department, -N), y = N)) 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/11_5_phong_ban_lon_nhat_ohio_state.png", plot11, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456362-e2802151-2e82-4cfa-b532-545db5645d05.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2NjQsIm5iZiI6MTc0MjIxMzM2NCwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2MzYyLWUyODAyMTUxLTJlODItNGNmYS1iNTMyLTU0NWRiNTY0NWQwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA5MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MzZhOTJkNjIwNGMxMGM3Yjk4MWUwYTAzNTkyZmI0NjU0NDJkNDBkZjZmZjJhOTA2NjdlOTQxNzZkOTkzOTE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.LplXlwdNggTi25elQ9Y3SmBbPkxsGM77BbxJJSQ-RPo)
+![11_5_phong_ban_lon_nhat_ohio_state](https://github.com/user-attachments/assets/482ebedd-ba41-4e76-86ad-029f2a645c25)
 
 ### 10.2. Lương trung bình theo năm tại The Ohio State University
 
@@ -308,7 +307,7 @@ plot12 <- ggplot(avg_earnings_per_year, aes(x = factor(Year), y = Average_Earnin
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/12_muc_luong_trung_binh_theo_nam_ohio_state.png", plot12, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456459-1259a2e3-c741-4615-be17-8b2f375edb48.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM2NzYsIm5iZiI6MTc0MjIxMzM3NiwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2NDU5LTEyNTlhMmUzLWM3NDEtNDYxNS1iZTE3LThiMmYzNzVlZGI0OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjA5MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YTllNjAxNWIwZGMyYTQ3Y2FkNGFjNzUxOWIzNTNjMGYwNDQxMGJiMzc2MjFkZjI5NGQyYzUwZjMwMDRmNGI4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eIm722nKxjeC8GiBiRy_DGB4S_K3kj4tw7VYSlLKB7A)
+![12_muc_luong_trung_binh_theo_nam_ohio_state](https://github.com/user-attachments/assets/bba6bb72-4370-4736-81d3-84e9338f9c85)
 
 ## 10.3. Phân bố lương theo năm (Violin) tại The Ohio State University
 
@@ -320,7 +319,7 @@ plot13 <- ggplot(df_ohio, aes(x = factor(Year), y = Earnings)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/13_so_sanh_muc_luong_violin_theo_nam_ohio_state.png", plot13, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456542-a2a43b90-0bda-47e8-ae9a-67d8fca528dd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM3MDEsIm5iZiI6MTc0MjIxMzQwMSwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2NTQyLWEyYTQzYjkwLTBiZGEtNDdlOC1hZTlhLTY3ZDhmY2E1MjhkZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjEwMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNDNjZGFkMGQ0OTc5MTcxMmUyMWRjOGIwMDUwNWJhMTRlY2VkMzA2NDI2ZWU4YjE0M2RlZDA3YTA0ZWI0MmE1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.GHc9pztP2wIH7Zmv4EZmuQGD4nh4vuoURtipWCJifqM)
+![13_so_sanh_muc_luong_violin_theo_nam_ohio_state](https://github.com/user-attachments/assets/c9189c46-d55f-44aa-a3d4-275ad2c2e43e)
 
 ## 10.4. Lương trung bình theo năm tại Shawnee State University
 
@@ -333,7 +332,7 @@ plot14 <- ggplot(avg_earnings_shawnee, aes(x = factor(Year), y = Average_Earning
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/14_muc_luong_trung_binh_theo_nam_shawnee_state.png", plot14, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456669-f5cbe65c-9efa-4db7-b316-583b52bd5ae3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM3MTUsIm5iZiI6MTc0MjIxMzQxNSwicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2NjY5LWY1Y2JlNjVjLTllZmEtNGRiNy1iMzE2LTU4M2I1MmJkNWFlMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjEwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMmE0NmUzZWM2M2ZiNzJiYTlhMGZmNTg5ZjY5MmZkNThiNTFkMGMwZWQwNjZiNzhhYzE4OTE1OGRiMDdiYzlhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.8XFuMV93auRKZDYk45klejk9ULyJ_sWnTBZAEKhPflc)
+![14_muc_luong_trung_binh_theo_nam_shawnee_state](https://github.com/user-attachments/assets/7350b00a-56bc-47dd-8931-be6310f27d99)
 
 ## 10.5. Phân bố lương theo năm (Violin) tại Shawnee State University
 
@@ -345,7 +344,7 @@ plot15 <- ggplot(df_shawnee, aes(x = factor(Year), y = Earnings)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("plots/15_so_sanh_muc_luong_violin_theo_nam_shawnee_state.png", plot15, width = 10, height = 6)
 ```
-![image](https://private-user-images.githubusercontent.com/134117986/423456765-9945bc11-33cf-400d-8fcc-8adfa7ba1f3b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyMTM3ODcsIm5iZiI6MTc0MjIxMzQ4NywicGF0aCI6Ii8xMzQxMTc5ODYvNDIzNDU2NzY1LTk5NDViYzExLTMzY2YtNDAwZC04ZmNjLThhZGZhN2JhMWYzYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMxN1QxMjExMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNDc1YTE5NmE3MjczYmIzNzFiMjczOGVjZTJjMTIxNzM4ZTU1YjkzYzEyOTg0YjJhMWFhNDRiOGJkOGY5MzZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eFf5jTUy5ca_vqkms6cui6ljDdmsrsOah5jc5FYkAqM)
+![15_so_sanh_muc_luong_violin_theo_nam_shawnee_state](https://github.com/user-attachments/assets/f377ea31-bf58-43b3-8263-68c7cdcf4f51)
 
 ## 11. Ngắt kết nối Spark
 ```r
